@@ -2,8 +2,6 @@
 
 **A hardware-anchored, end-to-end encrypted messaging prototype implementing three custom cryptographic protocols.**
 
-> Built for hackathon demonstration — runs entirely in the browser with optional ESP32 hardware identity anchoring via WebSerial.
-
 ---
 
 ## 📋 Table of Contents
@@ -14,7 +12,6 @@
 - [Peer Discovery — How Devices Find Each Other](#peer-discovery--how-devices-find-each-other)
 - [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
-- [Quick Start](#quick-start)
 - [Running the Project](#running-the-project)
 - [Using the Application](#using-the-application)
 - [Hardware Mode (ESP8266/ESP32)](#hardware-mode-esp8266esp32)
@@ -832,9 +829,3 @@ The project includes `src/protocol/bufferCompat.ts` to handle Node 24's stricter
 | Encryption | Server-mediated | AES-256-GCM, per-message keys |
 | Persistence | Forever on server | Self-destructing (30s – 24h) |
 | Broker | Trusted | Untrusted relay (sees only blobs) |
-
----
-
-## License
-
-Hackathon prototype — built for demonstration purposes.
